@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class JsonClass: NSObject {
-let urlBase = "http://192.168.1.67/"
+let urlBase = "http://192.168.1.64/"
     let key = "123456abcde"
     let model = UIDevice.current.model
     let iddevice = UIDevice.current.identifierForVendor!.uuidString

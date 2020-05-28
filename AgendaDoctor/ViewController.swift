@@ -44,10 +44,9 @@ class ViewController: UIViewController {
                 self.Doc.append(Doctor(idDoctor: iddoc, nomDoctor: nomD, especialidad: esp, horario: hora) )
                 self.performSegue(withIdentifier: "segue", sender: self)
                 if let msg = diccionario_datos.object(forKey: "message") as! String?{
-                    self.showAlerta(Titulo: "Usuario registrado", Mensaje: msg)
-                    
+                    self.showAlerta(Titulo: "Bienvenido ", Mensaje: msg)
                     }
-            }
+              }
         }
     }
     override func viewDidLoad() {
@@ -61,6 +60,7 @@ class ViewController: UIViewController {
             let seguex = segue.destination as! ViewControllerCitas
             seguex.Doc = Doc
         }
+        
     }
     
     func showAlerta(Titulo: String, Mensaje: String ){
