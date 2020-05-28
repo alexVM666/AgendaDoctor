@@ -11,7 +11,6 @@ import SQLite3
 
 class ViewControllerPacientes: UIViewController {
     var db : OpaquePointer?
-    var Cita = [Citas]()
     var doctor = [Doctor]()
     var pacientes = [Paciente]()
     let dataJsonUrlClass = JsonClass()
